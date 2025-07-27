@@ -1069,6 +1069,10 @@ h2::after {
   margin-bottom: 1rem;
 }
 
+.footer-logo img {
+  max-width: 100%;
+}
+
 .footer-links {
   display: flex;
   flex-direction: column;
