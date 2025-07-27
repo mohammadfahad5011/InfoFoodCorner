@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InfoFoodCorner | Minimal Dining</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/assets/logo.png" alt="" />
+        </div>
+        <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-link">Story</a></li>
+          <li><a href="#contact" class="nav-link">Visit</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Minimal <span class="highlight">Dining</span> Experience
+          </h1>
+          <p class="hero-subtitle">Where every ingredient tells a story</p>
+          <a href="#reservation" class="btn btn-reserve">Reserve a Table</a>
+        </div>
+
+        <!-- Food Shapes Container -->
+        <div class="food-shapes-container">
+          <div class="food-shape pizza">
+            <img src="./assets/pizza_prev.png" alt="" />
+          </div>
+          <div class="food-shape burger">
+            <img src="./assets/burger_prev.png" alt="" />
+          </div>
+          <!-- <div class="food-shape pasta">
+            <img src="./assets/burger_prev.png" alt="" />
+          </div> -->
+        </div>
+
+        <div class="hero-image">
+          <div class="image-container">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Restaurant interior"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="menu-section">
+        <div class="section-header">
+          <h2>Seasonal Menu</h2>
+          <p class="section-subtitle">
+            Crafted with locally-sourced ingredients
+          </p>
+          <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="starters">Starters</button>
+            <button class="filter-btn" data-filter="mains">Mains</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+            <button class="filter-btn" data-filter="drinks">Drinks</button>
+          </div>
+        </div>
+        <div class="menu-items">
+          <!-- Items will be loaded via JavaScript -->
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="Chef preparing food"
+          />
+        </div>
+        <div class="about-content">
+          <h2>Our Story</h2>
+          <p>
+            Founded in 2015, InfoFoodCorner began as a small passion project
+            between two chefs who believed in the power of minimal,
+            ingredient-focused cuisine.
+          </p>
+          <p>
+            Every dish we create is a celebration of the raw materials, allowing
+            each component to shine in its purest form.
+          </p>
+          <div class="stats">
+            <div class="stat-item">
+              <div class="stat-number" data-count="8">10+</div>
+              <div class="stat-label">Years</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="24">30</div>
+              <div class="stat-label">Team Members</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="100">250</div>
+              <div class="stat-label">Local Suppliers</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <h2>Our Culinary Creations</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Dish 1"
+            />
+            <div class="gallery-overlay">
+              <p>Seasonal Salad</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Dish 2"
+            />
+            <div class="gallery-overlay">
+              <p>Artisan Pasta</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Dish 3"
+            />
+            <div class="gallery-overlay">
+              <p>Fresh Breakfast</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Dish 4"
+            />
+            <div class="gallery-overlay">
+              <p>Gourmet Dessert</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="section-header">
+          <h2>Visit Us</h2>
+          <p class="section-subtitle">
+            Experience our minimalist dining space in person
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3>Location</h3>
+                <p>123 Minimal Street<br />Design District, DN 10100</p>
+                <a href="#" class="directions-btn"
+                  >Get Directions <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-content">
+                <h3>Hours</h3>
+                <div class="hours-grid">
+                  <div class="day">Tuesday - Thursday</div>
+                  <div class="time">5:30 PM - 10:00 PM</div>
+                  <div class="day">Friday - Saturday</div>
+                  <div class="time">5:30 PM - 11:00 PM</div>
+                  <div class="day">Sunday</div>
+                  <div class="time">5:30 PM - 9:00 PM</div>
+                  <div class="day">Monday</div>
+                  <div class="time">Closed</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3>Contact</h3>
+                <p>+1 (555) 123-4567</p>
+                <p>reservations@ InfoFoodCorner.com</p>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-map">
+            <div class="map-container">
+              <!-- Embedded Google Map -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209179051!2d-73.9888756845938!3d40.74844047932789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTMuNiJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+
+              <div class="map-overlay">
+                <h3>Parking Information</h3>
+                <p>
+                  Valet parking available Thursday-Saturday<br />
+                  Street parking available after 6PM<br />
+                  Nearby parking garage on 5th Avenue
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="transportation-options">
+          <h3>Getting Here</h3>
+          <div class="transport-grid">
+            <div class="transport-option">
+              <i class="fas fa-subway"></i>
+              <p>Subway: 4/5/6 to 42nd St</p>
+            </div>
+            <div class="transport-option">
+              <i class="fas fa-bus"></i>
+              <p>Bus: M1, M2, M3, M4</p>
+            </div>
+            <div class="transport-option">
+              <i class="fas fa-bicycle"></i>
+              <p>Bike racks available</p>
+            </div>
+            <div class="transport-option">
+              <i class="fas fa-wheelchair"></i>
+              <p>Wheelchair accessible</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reservation" class="reservation-section">
+        <div class="reservation-form">
+          <h2>Make a Reservation</h2>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Name" required />
+              <div class="error-message">Please enter your name</div>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required />
+              <div class="error-message">Please enter a valid email</div>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Phone" required />
+              <div class="error-message">Please enter your phone number</div>
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="" disabled selected>Party Size</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5+ People</option>
+              </select>
+              <div class="error-message">Please select party size</div>
+            </div>
+            <div class="form-group">
+              <input type="date" required />
+              <div class="error-message">Please select a date</div>
+            </div>
+            <div class="form-group">
+              <input type="time" required />
+              <div class="error-message">Please select a time</div>
+            </div>
+            <button type="submit" class="btn btn-submit">Reserve Now</button>
+          </form>
+        </div>
+        <div class="reservation-image">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="Restaurant table setting"
+          />
+        </div>
+      </section>
+    </main>
+
+    <button class="scroll-top" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./assets/logo.png" alt="" />
+        </div>
+        <div class="footer-links">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+        </div>
+        <div class="footer-newsletter">
+          <p>Subscribe to our newsletter</p>
+          <form>
+            <input type="email" placeholder="Your email" />
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 InfoFoodCorner. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
